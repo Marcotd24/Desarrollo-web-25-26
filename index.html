@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Semana 3 - HTML5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mi Página Web con HTML5</h1>
+        <p><strong>Semana 3</strong> – Uso de <em>etiquetas semánticas</em></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#contenido">Contenido</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="inicio">
+            <h2>Introducción</h2>
+            <p>
+                Esta página web fue creada como parte de una actividad académica para
+                demostrar el uso correcto de <strong>HTML5</strong> y la organización
+                profesional del contenido.
+            </p>
+        </section>
+
+        <section id="contenido">
+            <h2>Contenido Principal</h2>
+
+            <article>
+                <h3>Etiquetas Semánticas</h3>
+                <p>
+                    Las etiquetas semánticas permiten estructurar una página web de forma
+                    clara y ordenada, mejorando la accesibilidad y el SEO.
+                </p>
+            </article>
+
+            <article>
+                <h3>Listas en HTML</h3>
+
+                <p>Lista ordenada:</p>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+
+                <p>Lista desordenada:</p>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>GitHub</li>
+                    <li>Live Server</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Imagen y Video</h3>
+
+                <img src="assets/img/imagen1.jpg" alt="Imagen de ejemplo" width="300">
+
+                <br><br>
+
+                <video controls width="400">
+                    <source src="assets/video/video1.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+            </article>
+
+            <article>
+                <h3>Tabla de Ejemplo</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lenguaje</th>
+                            <th>Uso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Estructura</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Estilos</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Interactividad</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+
+            <form>
+                <label>Nombre:</label><br>
+                <input type="text" name="nombre" required><br><br>
+
+                <label>Correo:</label><br>
+                <input type="email" name="correo" required><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p>
+                Visita <a href="https://github.com" target="_blank">GitHub</a> para más información.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 - Proyecto Semana 3</p>
+    </footer>
+
+</body>
+</html>
