@@ -2,128 +2,122 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Semana 3 - HTML5</title>
+    <title>Mi Sitio Web con Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Mi Página Web con HTML5</h1>
-        <p><strong>Semana 3</strong> – Uso de <em>etiquetas semánticas</em></p>
-    </header>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Mi Sitio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#contenido">Contenido</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+<!-- HEADER -->
+<header class="container text-center my-5">
+    <h1 class="titulo-principal">Bienvenido a Mi Página Web</h1>
+    <p class="text-muted">Diseño moderno y responsivo con Bootstrap 5</p>
+</header>
 
-    <main>
+<!-- SECCIÓN PRINCIPAL -->
+<section class="container mb-5">
+    <div class="row g-4">
 
-        <section id="inicio">
-            <h2>Introducción</h2>
-            <p>
-                Esta página web fue creada como parte de una actividad académica para
-                demostrar el uso correcto de <strong>HTML5</strong> y la organización
-                profesional del contenido.
-            </p>
-        </section>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/img/imagen1.jpg" class="card-img-top img-fluid" alt="Imagen">
+                <div class="card-body">
+                    <h3 class="card-title">Diseño Responsivo</h3>
+                    <p class="card-text">Se adapta a cualquier tamaño de pantalla.</p>
+                </div>
+            </div>
+        </div>
 
-        <section id="contenido">
-            <h2>Contenido Principal</h2>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/img/imagen1.jpg" class="card-img-top img-fluid" alt="Imagen">
+                <div class="card-body">
+                    <h3 class="card-title">CSS Avanzado</h3>
+                    <p class="card-text">Animaciones, transiciones y efectos visuales.</p>
+                </div>
+            </div>
+        </div>
 
-            <article>
-                <h3>Etiquetas Semánticas</h3>
-                <p>
-                    Las etiquetas semánticas permiten estructurar una página web de forma
-                    clara y ordenada, mejorando la accesibilidad y el SEO.
-                </p>
-            </article>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/img/imagen1.jpg" class="card-img-top img-fluid" alt="Imagen">
+                <div class="card-body">
+                    <h3 class="card-title">Bootstrap 5</h3>
+                    <p class="card-text">Componentes modernos y fáciles de usar.</p>
+                </div>
+            </div>
+        </div>
 
-            <article>
-                <h3>Listas en HTML</h3>
+    </div>
+</section>
 
-                <p>Lista ordenada:</p>
-                <ol>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ol>
+<!-- COLLAPSE -->
+<section class="container text-center mb-5">
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#infoExtra">
+        Mostrar más información
+    </button>
 
-                <p>Lista desordenada:</p>
-                <ul>
-                    <li>Visual Studio Code</li>
-                    <li>GitHub</li>
-                    <li>Live Server</li>
-                </ul>
-            </article>
+    <div class="collapse mt-3" id="infoExtra">
+        <div class="card card-body">
+            Este contenido se muestra y oculta con Bootstrap.
+        </div>
+    </div>
+</section>
 
-            <article>
-                <h3>Imagen y Video</h3>
+<!-- FORMULARIO -->
+<section class="container mb-5">
+    <h2 class="text-center mb-4">Formulario de Contacto</h2>
 
-                <img src="assets/img/imagen1.jpg" alt="Imagen de ejemplo" width="300">
+    <form>
+        <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control">
+        </div>
 
-                <br><br>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control">
+        </div>
 
-                <video controls width="400">
-                    <source src="assets/video/video1.mp4" type="video/mp4">
-                    Tu navegador no soporta video.
-                </video>
-            </article>
+        <div class="mb-3">
+            <label class="form-label">Comentarios</label>
+            <textarea class="form-control" rows="4"></textarea>
+        </div>
 
-            <article>
-                <h3>Tabla de Ejemplo</h3>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</section>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Lenguaje</th>
-                            <th>Uso</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>HTML</td>
-                            <td>Estructura</td>
-                        </tr>
-                        <tr>
-                            <td>CSS</td>
-                            <td>Estilos</td>
-                        </tr>
-                        <tr>
-                            <td>JavaScript</td>
-                            <td>Interactividad</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-        </section>
+<!-- FOOTER -->
+<footer class="text-center bg-light py-3">
+    <p>&copy; 2025 Mi Sitio Web</p>
+</footer>
 
-        <section id="contacto">
-            <h2>Formulario de Contacto</h2>
-
-            <form>
-                <label>Nombre:</label><br>
-                <input type="text" name="nombre" required><br><br>
-
-                <label>Correo:</label><br>
-                <input type="email" name="correo" required><br><br>
-
-                <button type="submit">Enviar</button>
-            </form>
-
-            <p>
-                Visita <a href="https://github.com" target="_blank">GitHub</a> para más información.
-            </p>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2025 - Proyecto Semana 3</p>
-    </footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
+
