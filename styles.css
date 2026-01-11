@@ -1,45 +1,46 @@
-/* Botón personalizado */
-.btn-primary {
-    background-color: #ff5733;
-    border: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
 }
 
-.btn-primary:hover {
+.controls {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 300px;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-/* Título animado */
-.titulo-principal {
-    animation: aparecer 1.5s ease-in-out;
-}
-
-/* Animación */
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Cards */
-.card {
-    border-radius: 15px;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-/* Media query */
-@media (max-width: 576px) {
-    body {
-        background-color: #f8f9fa;
-    }
+.selected {
+    box-shadow: 0 0 15px 5px #007BFF;
+    border: 4px solid #007BFF;
 }
