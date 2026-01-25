@@ -2,42 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Formulario con Validaciones</title>
-    <link rel="stylesheet" href="styles.css">
-</head>   <!-- 👈 ESTA LÍNEA FALTABA -->
-
+    <title>Lista Dinámica de Productos</title>
+</head>
 <body>
 
-    <h2>Formulario de Registro</h2>
+    <h1>Lista de Productos</h1>
 
-    <form id="formulario">
+    <ul id="listaProductos"></ul>
 
-        <label>Nombre</label>
-        <input type="text" id="nombre">
-        <small id="errorNombre"></small>
-
-        <label>Correo electrónico</label>
-        <input type="email" id="correo">
-        <small id="errorCorreo"></small>
-
-        <label>Contraseña</label>
-        <input type="password" id="password">
-        <small id="errorPassword"></small>
-
-        <label>Confirmar contraseña</label>
-        <input type="password" id="confirmar">
-        <small id="errorConfirmar"></small>
-
-        <label>Edad</label>
-        <input type="number" id="edad">
-        <small id="errorEdad"></small>
-
-        <button type="submit" id="btnEnviar" disabled>Enviar</button>
-        <button type="reset">Reiniciar</button>
-
-    </form>
+    <button id="btnAgregar">Agregar Producto</button>
 
     <script src="script.js"></script>
 </body>
 </html>
-
